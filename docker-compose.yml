@@ -1,0 +1,9 @@
+services:
+  nova:
+     image: ghcr.io/doubleangels/nova:latest
+     container_name: nova
+     restart: unless-stopped
+     environment:
+       - DISCORD_BOT_TOKEN=
+       - DISCORD_CHANNEL_ID=
+       - DISCORD_ROLE_ID=
